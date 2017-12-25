@@ -10,6 +10,10 @@ dep ensure
 
 # How to use
 
+```
+cp .env.default .env
+```
+
 ## HTTP
 
 ```
