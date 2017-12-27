@@ -46,3 +46,7 @@ curl localhost:8080/v1/hello/1
 cd src/infrastructure/ui/command
 go build -o command && ./command -say-hello
 ```
+
+# TODO
+
+- Add mechanism of DI container
