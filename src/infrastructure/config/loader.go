@@ -1,10 +1,9 @@
 package config
 
 import (
-	"github.com/joho/godotenv"
-	"path/filepath"
-	"runtime"
 	"log"
+	"github.com/joho/godotenv"
+	"github.com/1105-6601/go-clean-architecture-example/src/util"
 )
 
 type Loader struct {
@@ -28,15 +27,13 @@ func NewLoader(env ...interface{}) *Loader {
 
 func (loader *Loader) Load() {
 
-	_, file, _, _ := runtime.Caller(0)
-
 	envFile := ".env"
 
 	if loader.Env != "" {
 		envFile += "." + loader.Env
 	}
-	dir := filepath.Dir(filepath.Dir(filepath.Dir(filepath.Dir(file)))) + "/" + envFile
 
+	dir := util.RootDir() + "/" + envFile
 	err := godotenv.Load(dir)
 
 	if err == nil {

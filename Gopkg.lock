@@ -50,6 +50,18 @@
   version = "v1.2.0"
 
 [[projects]]
+  name = "github.com/k0kubun/pp"
+  packages = ["."]
+  revision = "027a6d1765d673d337e687394dbe780dd64e2a1e"
+  version = "v2.3.0"
+
+[[projects]]
+  name = "github.com/mattes/migrate"
+  packages = [".","database","database/mysql","source","source/file"]
+  revision = "035c07716cd373d88456ec4d701402df52584cb4"
+  version = "v3.0.1"
+
+[[projects]]
   name = "github.com/mattn/go-colorable"
   packages = ["."]
   revision = "167de6bfdfba052fa6b2d3664c8f5272e23c9072"
@@ -65,7 +77,7 @@
   branch = "master"
   name = "github.com/ugorji/go"
   packages = ["codec"]
-  revision = "adc90d020264cc082f0c094fc492f68304206c51"
+  revision = "7bdfbc68187228a730beb5b825508079b9e757b6"
 
 [[projects]]
   branch = "master"
@@ -88,6 +100,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "c86c7acefba21b0573159344d250cd6ce8e910657a16f1d89f723a15538a293f"
+  inputs-digest = "290a6fc5b760d94e982c3500c02d90fc83b041a4372f6e1ec1936b705e74137d"
   solver-name = "gps-cdcl"
   solver-version = 1

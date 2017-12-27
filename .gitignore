@@ -1,4 +1,5 @@
 .env
 vendor/
+_vendor*
 src/infrastructure/ui/command/command
 src/infrastructure/ui/server/server

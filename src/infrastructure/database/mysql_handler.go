@@ -1,7 +1,7 @@
 package database
 
 import (
-	_ "github.com/jinzhu/gorm/dialects/mysql"
+	//_ "github.com/jinzhu/gorm/dialects/mysql"
 	"github.com/jinzhu/gorm"
 	"strings"
 	"fmt"
@@ -30,6 +30,10 @@ func NewMysqlHandler() *MysqlHandler {
 	handler.Connection = db
 
 	return handler
+}
+
+func GetFullDSN() string {
+	return "mysql://" + makeDSN()
 }
 
 func makeDSN() string {

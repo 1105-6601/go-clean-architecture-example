@@ -8,6 +8,21 @@ Clean architecture example in Golang.
 dep ensure
 ```
 
+# Migration
+
+## Execute
+
+```
+cd src/infrastructure/ui/command
+go build -o command && ./command -migrate -step=1
+```
+
+## Sample data
+
+```
+insert into users (first_name, last_name, created_at) values ('Human', 'Ordinary', now());
+```
+
 # How to use
 
 ```
